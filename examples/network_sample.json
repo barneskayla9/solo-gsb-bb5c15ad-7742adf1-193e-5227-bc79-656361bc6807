@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {"code": "S1", "kind": "source", "name": "一水厂"},
+    {"code": "J1", "kind": "junction", "name": "连接点1"},
+    {"code": "J2", "kind": "junction", "name": "连接点2"},
+    {"code": "U1", "kind": "sink", "name": "用水点1"},
+    {"code": "U2", "kind": "sink", "name": "用水点2"}
+  ],
+  "edges": [
+    {"code": "P1", "from_code": "S1", "to_code": "J1", "has_valve": true},
+    {"code": "P2", "from_code": "J1", "to_code": "J2", "has_valve": true},
+    {"code": "P3", "from_code": "J2", "to_code": "U1", "has_valve": true},
+    {"code": "P4", "from_code": "J1", "to_code": "U2", "has_valve": false}
+  ]
+}
